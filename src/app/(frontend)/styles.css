@@ -1,3 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@theme {
+  /* === 60% DOMINANTE (#001621) === */
+  --color-bg-primary: #001621;
+  --color-bg-deep: #000F17;
+
+  /* === 30% SECUNDÁRIO (#113E54) === */
+  --color-bg-secondary: #00293D;
+  --color-bg-surface: #00293D;
+  --color-border-subtle: #00293D;
+
+  /* === 10% DESTAQUE (#DBC1A0) === */
+  --color-accent: #DBC1A0;
+  --color-accent-hover: #E7D3B9;
+  --color-accent-muted: rgba(219, 193, 160, 0.14);
+
+  /* === TIPOGRAFIA === */
+  --color-ink-primary: #F8F6F2;
+  --color-ink-secondary: #B8C9D1;
+  --color-ink-muted: #7C97A5;
+  --color-ink-on-accent: #001621;
+
+  --font-display: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-bg-primary);
+    color: var(--color-ink-primary);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+  }
+}
+
+
+
 :root {
   --font-mono: 'Roboto Mono', monospace;
 }
